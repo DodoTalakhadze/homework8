@@ -1,25 +1,62 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
 /* task1 */
-.section1{
-    background-color: palevioletred;
- }
-button{
-    width: 300px;
-    height: 100px;
-    font-size: large;
-    background-color: palevioletred;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: white;
-    margin: 50px;
-    box-shadow: 5px 7px 7px 2px rgb(31, 30, 30), 3px 3px 6px 0 whitesmoke inset;
-    border: none;
-    border-radius: 20px;
-    text-shadow: 4px 5px 4px rgb(35, 34, 34);
+.section1 {
+  display: flex;
+  justify-content: center;
+  background-color: palevioletred;
+}
+button {
+  width: 300px;
+  height: 100px;
+  font-size: large;
+  background-color: palevioletred;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: white;
+  margin: 50px;
+  box-shadow: 5px 7px 7px 2px rgb(31, 30, 30), 3px 3px 6px 0 whitesmoke inset;
+  border: none;
+  border-radius: 20px;
+  text-shadow: 4px 5px 4px rgb(35, 34, 34);
 }
 
-button:hover{
-    box-shadow: 5px 7px 7px 2px rgb(31, 30, 30) inset, -3px -3px 7px 0 whitesmoke inset;
-    text-shadow: 1px 1px 4px rgb(35, 34, 34);
+button:hover {
+  box-shadow: 5px 7px 7px 2px rgb(31, 30, 30) inset,
+    -3px -3px 7px 0 whitesmoke inset;
+  text-shadow: 1px 1px 4px rgb(35, 34, 34);
 }
 
 /* task2 */
+.task2 {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.card{
+    padding: 20px;
+    width: 340px;
+    transition-duration: 1s;
+}
+.card img {
+  height: 300px;
+  width: 300px;
+  transition-duration: 1s;
+}
+h3{
+    color: palevioletred;
+    font-size: larger;
+    text-wrap: initial;
+    text-align: center;
+}
+.card:hover{
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 0 palevioletred, -5px -5px 10px 0 palevioletred;
+}
+.card:hover img{
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px;
+}
