@@ -93,9 +93,9 @@ h3 {
 .task4 {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   padding: 30px;
   position: relative;
-
 }
 .task4 div {
   height: 200px;
@@ -104,36 +104,21 @@ h3 {
   border-width: 30px;
   border-style: solid;
   border-color: blueviolet palevioletred purple purple;
-  animation: spin 1s infinite;
-  
-
+  animation: spin 1s linear infinite;
 }
 .task4 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   position: absolute;
   font-size: 40px;
   color: blueviolet;
   font-weight: bold;
-  /* top: 50%; left: 50%; transform: translate (-50%, -50%); */
-  left: 50%; transform: translateX (-50%);
-  /* top: 50%; transform: translateY(-50%); */
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, -50%);
 }
-/* @keyframes spin {
-  0% {
-    border-color: blueviolet palevioletred purple purple;
-  }
-  25% {
-    border-color: palevioletred purple purple blueviolet;
-  }
-  50% {
-    border-color: purple purple blueviolet palevioletred;
-  }
-  75% {
-    border-color: purple blueviolet palevioletred purple;
-  }
-  100% {
-    border-color: blueviolet palevioletred purple purple;
-  }
-} */
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -157,7 +142,7 @@ h3 {
 /* task5 */
 header {
   display: flex;
-  background-color: rgb(220, 132, 161);
+  background-color: rgb(214, 147, 169);
   justify-content: center;
   align-items: center;
   padding: 40px;
@@ -167,7 +152,6 @@ header nav {
 }
 header nav ul {
   display: flex;
-  /* gap: 60px; */
   justify-content: space-around;
 }
 header ul li a {
@@ -187,26 +171,32 @@ header ul li a:hover {
   align-items: center;
   padding: 50px 0;
 }
-.task6 div {
+.loading_box {
   height: 50px;
   width: 700px;
   border: solid 2px black;
   border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: loading 4s infinite;
-  background-image: none;
+  position: relative;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  animation: loading 10s linear;
+  background: linear-gradient(to right, red, blue);
+  position: absolute;
 }
 @keyframes loading {
   0% {
-    background-image: none;
+    width: 0%;
   }
   100% {
-    background-image: linear-gradient(to right, red, blue);
+    width: 100%;
   }
 }
 .task6 p {
   font-size: 25px;
   letter-spacing: 2px;
+  position: absolute;
 }
