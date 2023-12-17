@@ -36,27 +36,98 @@ button:hover {
   justify-content: center;
   padding: 50px;
 }
-.card{
-    padding: 20px;
-    width: 340px;
-    transition-duration: 1s;
+.card {
+  padding: 20px;
+  width: 340px;
+  transition-duration: 1s;
 }
 .card img {
   height: 300px;
   width: 300px;
   transition-duration: 1s;
 }
-h3{
-    color: palevioletred;
-    font-size: larger;
-    text-wrap: initial;
-    text-align: center;
+h3 {
+  color: palevioletred;
+  font-size: larger;
+  text-wrap: initial;
+  text-align: center;
 }
-.card:hover{
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px 0 palevioletred, -5px -5px 10px 0 palevioletred;
+.card:hover {
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 0 palevioletred, -5px -5px 10px 0 palevioletred;
 }
-.card:hover img{
-    border-top-left-radius: 30px;
-    border-top-right-radius:30px;
+.card:hover img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
+/* task3 */
+.task3 {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.task3 p {
+  color: red;
+  font-size: 140px;
+  letter-spacing: 20px;
+  animation: cimcim 0.5s infinite;
+}
+@keyframes cimcim {
+  0% {
+    text-shadow: 0 0 0 red;
+  }
+  25% {
+    text-shadow: 0 0 10px red;
+  }
+  50% {
+    text-shadow: 0 0 20px red;
+  }
+  75% {
+    text-shadow: 0 0 30px red;
+  }
+  100% {
+    text-shadow: 0 0 40px red;
+  }
+}
+/* task4 */
+.task4 {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.task4 div {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-width: 30px;
+  border-style: solid;
+  border-color: blueviolet palevioletred purple purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  color: blueviolet;
+  font-weight: bold;
+  animation: spin 1s infinite;
+}
+@keyframes spin {
+  0% {
+    border-color: blueviolet palevioletred purple purple;
+  }
+  25% {
+    border-color: palevioletred purple purple blueviolet;
+  }
+  50% {
+    border-color: purple purple blueviolet palevioletred;
+  }
+  75% {
+    border-color: purple blueviolet palevioletred purple;
+  }
+  100% {
+    border-color: blueviolet palevioletred purple purple;
+  }
+}
+.task4 div:hover {
+  animation: none;
+}
+/* task5 */
