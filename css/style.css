@@ -24,7 +24,7 @@ button {
   text-shadow: 4px 5px 4px rgb(35, 34, 34);
 }
 
-button:hover {
+button:active {
   box-shadow: 5px 7px 7px 2px rgb(31, 30, 30) inset,
     -3px -3px 7px 0 whitesmoke inset;
   text-shadow: 1px 1px 4px rgb(35, 34, 34);
@@ -93,7 +93,7 @@ h3 {
 .task4 {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   padding: 30px;
   position: relative;
 }
@@ -107,37 +107,22 @@ h3 {
   animation: spin 1s linear infinite;
 }
 .task4 p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   position: absolute;
   font-size: 40px;
   color: blueviolet;
   font-weight: bold;
-  top: 50%;
-  left: 50%;
-  transform: translate (-50%, -50%);
 }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  }
   100% {
     transform: rotate(360deg);
   }
 }
 .task4 div:hover {
-  animation: none;
+  animation-play-state: paused;
 }
 /* task5 */
 header {
